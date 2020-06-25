@@ -1,0 +1,97 @@
+// Tablets & smaller
+@media(max-width: 900px) {
+  // Guides
+  #guides .container-guides ul li div {
+      width: 250px;
+  }
+
+  #guides .container-guides ul li:nth-child(even) div {
+      left: -284px;
+  }
+}
+
+// Smartphones
+@media(max-width: 600px) {
+  /* Navigation */
+  #main-nav {
+    .social {
+    display: none;
+    }
+
+    .container {
+      grid-template-columns: 1fr;
+      grid-gap: 1.2rem;
+
+      ul {
+        justify-self: center;
+
+        li a {
+          padding: .5rem;
+        }
+      }
+
+      .logo {
+        justify-self: center;
+      }
+    }
+  }
+
+  // Showcase
+  #showcase {
+    .showcase-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Section A: How It Works?
+  #home-a {
+    .process {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Section B: What Is IDOM?
+  #home-b {
+    display: block;
+
+    .what-img {
+      display: none;
+    }
+  }
+
+  // Guides
+  #guides {
+    .container-guides {
+      ul {
+        li {
+          margin-left: 20px;
+
+          &:nth-child(even) div {
+            left: 40px;
+
+            &:before {
+              left: -15px;
+              border-width: 8px 16px 8px 0;
+              border-color: transparent var(--primary-color) transparent transparent;
+            }
+          }
+
+          div {
+            width: calc(100vw - 90px);
+          }
+        }
+      }
+    }
+  }
+
+  // Footer 
+  #main-footer {
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1;
+  }
+}
