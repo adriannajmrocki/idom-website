@@ -1,5 +1,12 @@
 // Tablets & smaller
 @media(max-width: 900px) {
+  // Navigation
+  #main-nav {
+    .container {
+      grid-template-columns: 3fr 3fr 3fr;
+    }
+  }
+
   // Guides
   #guides .container-guides ul li div {
       width: 250px;

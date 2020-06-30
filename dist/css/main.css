@@ -308,6 +308,8 @@ img {
     font-size: 0.95rem; }
 
 @media (max-width: 900px) {
+  #main-nav .container {
+    grid-template-columns: 3fr 3fr 3fr; }
   #guides .container-guides ul li div {
     width: 250px; }
   #guides .container-guides ul li:nth-child(even) div {
